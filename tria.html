@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tria — Marketplace Advisor</title>
+  <link rel="stylesheet" href="beauty.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div>
+          <h1>Tria — Marketplace Advisor</h1>
+          <p class="lead">AI-powered price comparison, seller trust, and recommendation system</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#problem">Problem & Solution</a>
+        <a href="#team">Team</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#tech">Tech & AI</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card intro" id="problem" style="margin-top:20px">
+        <div class="pill">Domain: E-commerce / Fintech</div>
+        <h2>1. Problem & Solution</h2>
+        <p class="muted">Problem — Uzbekistan buyers struggle to compare prices, seller reliability, delivery times, and authenticity across local marketplaces (Uzum, OLX, Korzinka, ZoodMall, small shops). This causes wasted time, overpayment, and fraud risk.</p>
+        <h3 style="margin-top:12px">Solution</h3>
+        <p class="muted">Tria is a lightweight AI-backed advisor that:</p>
+        <ul class="muted">
+          <li>Aggregates product listings across marketplaces</li>
+          <li>Ranks best deals by price, delivery time, and seller trust</li>
+          <li>Summarizes reviews with NLP and detects suspicious sellers</li>
+          <li>Offers an AI chat assistant to suggest alternatives</li>
+        </ul>
+        <div class="features">
+          <div class="feature">
+            <h4>Buyer savings</h4>
+            <div class="muted">Find the lowest total cost (price + delivery + risk) fast.</div>
+          </div>
+          <div class="feature">
+            <h4>Seller trust score</h4>
+            <div class="muted">AI-driven reputation and fraud risk signals.</div>
+          </div>
+          <div class="feature">
+            <h4>Review summarization</h4>
+            <div class="muted">Short pros/cons from hundreds of reviews.</div>
+          </div>
+          <div class="feature">
+            <h4>Chat assistant</h4>
+            <div class="muted">Instant alternatives and negotiating tips.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="team" style="margin-top:20px">
+        <h2>2. Team Details</h2>
+        <div class="team-list">
+          <div class="member">
+            <strong>Abdulqodir Miraliyev</strong>
+            <div class="role">Designer • Project Manager (Team Lead)</div>
+            <div class="muted" style="margin-top:8px">Responsibilities: UI/UX, presentation, product direction, communication with judges.</div>
+            <div style="margin-top:8px" class="muted"><em>Skills:</em> Figma, Adobe XD, basic HTML/CSS, project coordination</div>
+          </div>
+          <div class="member">
+            <strong>Fayzirahmon Mirzahmadov</strong>
+            <div class="role">Data Engineer</div>
+            <div class="muted" style="margin-top:8px">Responsibilities: scraping, ETL pipelines, data normalization.</div>
+            <div style="margin-top:8px" class="muted"><em>Skills:</em> Python, Scrapy, PostgreSQL, data cleaning</div>
+          </div>
+          <div class="member">
+            <strong>Sardorbek Muxamedov</strong>
+            <div class="role">ML Engineer</div>
+            <div class="muted" style="margin-top:8px">Responsibilities: NLP review summarization, seller-score models, ranking.</div>
+            <div style="margin-top:8px" class="muted"><em>Skills:</em> Python, Scikit-learn, Transformers, Pandas</div>
+          </div>
+          <div class="member">
+            <strong>Komronbek Mirobidov</strong>
+            <div class="role">Backend Developer</div>
+            <div class="muted" style="margin-top:8px">Responsibilities: API design, database, scrapers, deployment.</div>
+            <div style="margin-top:8px" class="muted"><em>Skills:</em> Node.js / Python (FastAPI), SQL, Docker</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="why" style="margin-top:20px">
+        <h2>3. Why our team can solve this</h2>
+        <p class="muted">
+          Our team covers all core areas needed for this product: 
+          UI/UX design, data engineering, machine learning, and backend development. 
+          We have experience building scrapers, ML models — exactly the components required for Tria. 
+          With strong coordination and clear task ownership, we can deliver a working prototype quickly and effectively.
+        </p>
+      </section>
+
+      <section class="card" id="roadmap" style="margin-top:20px">
+        <h2>4. Roadmap & Current Stage</h2>
+        <p class="muted">Current stage: <strong>Prototype</strong> — we have architecture, mock UI screens, and initial data pipelines.</p>
+        <div class="roadmap">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>Data collection & ETL</strong>
+              <div class="muted">Scrapers for top marketplaces, normalize categories, store historical prices.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>Basic ranking API</strong>
+              <div class="muted">Return aggregated offers, total cost, and simple scoring (price + delivery).</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>ML models</strong>
+              <div class="muted">NLP review summarizer, seller trust score, anomaly detection.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <strong>Frontend & Chat assistant</strong>
+              <div class="muted">User search, results table, chat for suggestions and negotiation tips.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="tech" style="margin-top:20px">
+        <h2>5. How we plan to solve it (Tech & AI)</h2>
+        <p class="muted">Key steps, tools and AI usage:</p>
+        <ul class="muted">
+          <li><strong>Data:</strong> Scrape public marketplace listings and use public APIs where available. Store in PostgreSQL.</li>
+          <li><strong>Backend:</strong> FastAPI or Node.js REST API, Docker for containers, cron/Airflow for scraping jobs.</li>
+          <li><strong>Frontend:</strong> React (or a static Notion/Wix demo for submission). Simple search → results → detail.</li>
+          <li><strong>ML / AI:</strong> Transformers / DistilBERT for review summarization, lightweight classifier for seller risk, ranking model combines price/delivery/trust.</li>
+          <li><strong>Chat assistant:</strong> RAG approach: small vector DB + short-context LLM calls for search & recommendation.</li>
+        </ul>
+        <h3 style="margin-top:10px">Technical depth & innovation</h3>
+        <p class="muted">Our use of AI focuses on actionable signals (trust, summary, ranking) rather than generic recommendations. The product is usable with minimal compute: heavy NLP tasks can run as batch jobs while ranking and search remain real-time.</p>
+        <div style="margin-top:12px" class="code">Suggested hosting: Vercel / Netlify (frontend) + Render / Railway / Heroku (API)</div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Made by <strong>Tria</strong> — Marketplace Advisor</div>
+    </footer>
+  </div>
+</body>
+</html>
